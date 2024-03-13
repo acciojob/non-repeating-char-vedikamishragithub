@@ -12,19 +12,13 @@ for(let i = 0; i < input.length; i++) {
     }
 
 }
-for(let key in frequency) {
-	if(frequency[key] == 1) {
-		var final = key;
-		
-		break;
-	}else{
-		var final =null;
-	}
+for(let i = 0; i < input.length; i++) {
+		if(frequency[input[i]] === 1) {
+		  return input[i];
+		}
+	  }
 	
-
-	
-}
-return final;
+	  return null;
 }
 
 const input = prompt("Enter a string");
