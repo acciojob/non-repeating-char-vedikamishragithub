@@ -1,5 +1,5 @@
 function firstNonRepeatedChar(input) {
-//   // Write your code here
+  // Write your code here
   
 let frequency = {};
 
@@ -17,12 +17,18 @@ for(let key in frequency) {
 		var final = key;
 		
 		break;
+	}else{
+		var final =null;
 	}
+	
 
 	
 }
 return final;
 }
+
 const input = prompt("Enter a string");
 alert(firstNonRepeatedChar(input));
+
+
 
